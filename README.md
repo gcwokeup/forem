@@ -203,4 +203,11 @@ Any questions, please refer to our
   <strong>Happy Coding</strong> ❤️
 </p>
 
+#coolcatscoding
+- ran into the following error during bundle:
+  - ```In file included from binder.cpp:20: ./project.h:119:10: fatal error: 'openssl/ssl.h' file not found```
+  - solution
+    - ```bundle config build.eventmachine --with-cppflags=-I$(brew --prefix openssl)/include```
+
+
 [⬆ Back to Top](#Table-of-contents)
